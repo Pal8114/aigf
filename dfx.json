@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "aigf_backend": {
+      "main": "src/aigf_backend/main.mo",
+      "type": "motoko"
+    },
+    "aigf_frontend": {
+      "dependencies": [
+        "aigf_backend"
+      ],
+      "source": [
+        "src/aigf_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "aigf_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
